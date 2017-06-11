@@ -30,6 +30,6 @@ handlebars加入markdown文件的支持,显示段落
 
 修正方案:
 
-将<markdown>test.md</markdown> 整体作为一个字符串, 传入handlebars模板
+将<markdown>test.md</markdown> 整体作为一个字符串,再yaml文件中定义好.再传入handlebars模板
 
 生成html后,再通过dom文件整体替换markdown标签内容.
