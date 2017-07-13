@@ -27,22 +27,22 @@ earn money by hot fix server.
 -----------------------------------------------------------------------------------------------
 第二版优化
 
-1. 读取本地package.json
-	获取当前版本号,MD5校验码
-2. 检测本地是否有bundle文件
-	2.1 无bundle文件
+1. 读取本地package.json   
+	获取当前版本号,MD5校验码   
+2. 检测本地是否有bundle文件   
+	2.1 无bundle文件   
 			下载bundle_version_full文件,保存为bundle文件			
-	2.2 有bundle文件
-			本地读取
-			计算MD5验证码,与package.json中的md5比较
-				相同:下一步
-				不相同:
-					下载bundle_version_full文件					
-3. 下载bundle_version_path文件
-		path文件无数据
-			下一步
-		path文件有数据
-			合并bundle_version_full和bundle_version_path
-			3.1. 写入bundle文件
-			3.2. 强制刷新bundle
-4. 进入应用
+	2.2 有bundle文件   
+			本地读取   
+			计算MD5验证码,与package.json中的md5比较   
+				相同:下一步   
+				不相同:   
+					下载bundle_version_full文件		 			
+3. 下载bundle_version_path文件   
+		path文件无数据   
+			下一步   
+		path文件有数据   
+			合并bundle_version_full和bundle_version_path   
+			3.1. 写入bundle文件   
+			3.2. 强制刷新bundle   
+4. 进入应用   
